@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Scientifique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculatrice">
+        <div class="top-bar">
+            <span class="theme-label">Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="Affichage">
+            <div class="historique"></div>
+            <p>0</p>
+        </div>
+
+        <div class="Boutons">
+            <table class="tableau" align="center">
+                <tr>
+                    <td><input type="button" value="(" class="parenthese"></td>
+                    <td><input type="button" value=")" class="parenthese"></td>
+                    <td><input type="button" value="1/x" class="inverse"></td>
+                    <td><input type="button" value="%" class="pourcentage"></td>
+                    <td><input type="reset" value="AC" class="annuler"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="&radic;" class="racine"></td>
+                    <td><input type="button" value="1" class="nombre"></td>
+                    <td><input type="button" value="2" class="nombre"></td>
+                    <td><input type="button" value="3" class="nombre"></td>
+                    <td><input type="button" value="&divide;" class="operation"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="x&sup2;" class="caree"></td>
+                    <td><input type="button" value="4" class="nombre"></td>
+                    <td><input type="button" value="5" class="nombre"></td>
+                    <td><input type="button" value="6" class="nombre"></td>
+                    <td><input type="button" value="&times;" class="operation"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="+/-" class="signe"></td>
+                    <td><input type="button" value="7" class="nombre"></td>
+                    <td><input type="button" value="8" class="nombre"></td>
+                    <td><input type="button" value="9" class="nombre"></td>
+                    <td><input type="button" value="-" class="operation"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="&#9003;" class="effacer"></td>
+                    <td><input type="button" value="0" class="nombre"></td>
+                    <td><input type="button" value="." class="virgule"></td>
+                    <td><input type="button" value="=" class="egale"></td>
+                    <td><input type="button" value="+" class="operation"></td>
+                </tr>
+            </table>   
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

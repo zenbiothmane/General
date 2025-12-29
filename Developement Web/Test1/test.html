@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- This is a simple HTML document that demonstrates various HTML elements.
+    It includes headings, paragraphs, links, lists, images, and a table.-->
+
+<html>
+    <head>
+        <title>Ma premiere page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h2 {
+                color: green;
+            }
+
+            h4 {
+                color: orange;
+            }
+
+            h5 {
+                color: brown;
+            }
+
+            h6 {
+                color: pink;
+            }
+
+            a {
+                color: red;
+                text-decoration: none;           
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p>Bonjour tout le monde</p>
+
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </nav>
+
+        <h1 style="color: red;">Bienvenue sur ma page de test</h1>
+
+        <h2>
+            <a href="https://www.google.com" target="_blank">Lien vers Google</a>
+        </h2>
+
+        <h3>Liste de mes animaux préférés</h3>
+        <ul>
+            <li>Chien</li>
+            <li>Chat</li>
+            <li>Lapin</li>
+            <li>Hamster</li>
+            <li>Perroquet</li>
+            <li>Poisson rouge</li>
+        </ul>
+
+        <ol>
+            <li>Chien</li>
+            <li>Chat</li>
+            <li>Lapin</li>
+            <li>Hamster</li>
+            <li>Perroquet</li>
+            <li>Poisson rouge</li>
+        </ol>
+
+        <ol type="a">
+            <li>Chien</li>
+            <li>Chat</li>
+            <li>Lapin</li>
+            <li>Hamster</li>
+            <li>Perroquet</li>
+            <li>Poisson rouge</li>
+        </ol>
+
+
+        <h4>
+            <a href="https://www.wikipedia.org" target="_blank">Lien vers Wikipedia</a>
+        </h4>
+
+        <h5>
+            <a href="https://www.youtube.com" target="_blank">Lien vers YouTube</a>
+        </h5>
+
+        <h6>
+            <a href="https://www.facebook.com" target="_blank">Lien vers Facebook</a>
+        </h6>
+
+        <a href="https://epg.ma" target="_blank"> <img src="morskie-oko-a-tatry.jpg" alt="nature"/ height="300" width="500"> </a>
+        <br>
+        <a href="https://epg.ma" target="_blank">lien cliquable</a>
+
+
+        <table border="1" width="100%" cellpadding="5" cellspacing="0">
+            <caption>Tableau des utilisateurs</caption>
+            <tr bgcolor="yellow">
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Ville</th>
+            </tr>
+            <tr align="center">
+                <td>Jean Dupont</td>
+                <td>30</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td align="right">Marie Curie</td>
+                <td>35</td>
+                <td>Lyon</td>
+            </tr>
+            <tr>
+                <td bgcolor="blue">Pierre Martin</td>
+                <td>28</td>
+                <td>Marseille</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <form>
+            <label>Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+
+            <label>Date de naissance:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <br>
+
+            <label>Adresse:</label>
+            <textarea name="Adresse" id="Adresse" cols="20" rows="5"></textarea>
+            <br>
+            <br>
+
+            <label>Âge:</label>
+            <input type="number" id="age" name="age" min="1" max="120">
+            <br>
+            <br>
+
+            <label>Genre :</label>
+            <input type="radio" name="Genre" value="Homme"> Homme
+            <input type="radio" name="Genre" value="Femme"> Femme
+            <br>
+            <br>
+
+            <label>Loisirs :</label>
+            <label><input type="checkbox">Sport</label>
+            <label><input type="checkbox">Musique</label>
+            <label><input type="checkbox">Lecture</label>
+            <label><input type="checkbox">Voyage</label>
+            <label><input type="checkbox">Cuisine</label>
+            <br>
+            <br>
+
+            <label>Langues parlées :</label>
+            <select name="langues" id="langues">
+                <option selected value="français">Français</option>
+                <option value="anglais">Anglais</option>
+                <option value="espagnol">Espagnol</option>
+                <option value="allemand">Allemand</option>
+                <option value="italien">Italien</option>
+                <option value="arabe">Arabe</option>
+                <option value="russe">Russe</option>
+                <option value="chinois">Chinois</option>
+                <option value="japonais">Japonais</option>
+                <option value="portugais">Portugais</option>
+                <option value="autre">Autre</option>
+            </select>
+            <br>
+            <br>
+
+            <button>Cliquer ICI</button>
+            <button><a href="http://google.com" target="_blank" rel="noopener noreferrer">Accée pour Google</a></button>
+            <input type="button" value="Bouton simple" onclick="alert('Vous avez cliqué sur le bouton simple!')">
+            <input type="reset" value="Réinitialiser le formulaire">
+            <input type="submit" value="Envoyer">
+
+        </form>
+
+    </body>
+
+</html>
